@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="res/F1logo.jpg" type="image/x-icon" style="border-radius: 50%;">
+   <title>FORMULA 1</title>
+</head>
+<body>
+  <header>
+    <div>
+     <nav class="nav_bar"> 
+     
+    <a href="../index.html"> <img src="../res/F1logo.jpg" alt="" style="height:60px; width: 60px;" ></a>
+           <div class="nav-links">
+    <ul>
+     
+     <li><a href="./index.html">Home</a></li>
+     <li><a href="pages/Quiz.html">Quiz</a></li>
+     <li><a href="pages/page_origines.html">Origines</a></li>
+     <li><a href="pages/Competition.html">Competitions</a></li>
+     <li><a href="pages/ecurie.html">Ecuries</a></li>
+    </ul>
+ 
+ 
+           </div>
+ 
+    </nav>
+    
+ </div>
+   </header>
+  <main>
+  <div class="Welcom">
+
+   <h1 style="text-align: center;"> Bienvenue sur notre site consacré a l’actualité et l’histoire de la F1 <br>
+     </h1>
+  
+   </div>
+  <br>
+    <h2 id="actu"> Actualités</h2>
+
+              <div class="slider-frame" >
+                  <div class="slide-images">
+
+                      <div class="img-container" id="actus">
+                         <a href="https://www.formula1.com/en/racing/2023/Las_Vegas.html" target="_blank"><img src="res/Las_Vegas_2023.jpg" alt="" style="width:100%"></a>
+                      </div>
+
+                      <div class="img-container">
+                          <a href="https://www.france24.com/fr/sports/20221009-max-verstappen-devient-champion-du-monde-de-formule-1-%C3%A0-l-issue-du-grand-prix-du-japon" target="_blank"><img src="res/WC_max-verstappen-f1_5925652.jpg" alt="" style="width:100%"></a>
+                      </div>
+                      <div class="img-container">
+                       <a href="https://www.f1actu.com/andretti-veut-alonso-dans-sa-future-equipe-de-formule-1/" target="_blank"> <img src="res/alonzo.jpg" alt="" style="width:100%" ></a>
+                    </div>
+                  </div>
+
+              </div>
+           
+
+
+
+            
+
+
+   
+ <div class="container" style="float: right;"> <!-- tableau des resultats en directs ici-->
+ <table class="pilotes" id="pilotes" > <!-- la table sera charge avec les infos des fichiers xml + update chaque 10secondes-->
+     
+ </table> </div> 
+
+
+            <!-- partie boutons qui renvoient vers d'autres pages-->
+            <div class="info">
+                
+                  <button onclick="window.location.href='pages/Competition.html'" >Competitions</button>
+                  <button onclick="window.location.href='pages/page_origines.html'" >Origines</button>
+                  <button onclick="window.location.href='pages/ecurie.html'" >Ecuries</button>
+                  <button onclick="window.location.href='pages/Quiz.html'" >Quiz </button>
+                
+            </div>    
+ 
+            <!-- partie 2 eme tableau : classement 2022 des pilotes-->
+            <div class="container2" id="cont2"> 
+              <table class="pilotes" > 
+                  <tbody>
+                    
+              <tr><td colspan="3" class="classy1" ><h6>Classement 2022 des pilotes</h6></td></tr>
+              
+                <tr >
+                  <th>Rang</th>
+                  <th>Pilote</th>
+                  <th>Points</th>
+                  
+                </tr>
+              <tr class="blacko"><td class="numeroT"><b>1</b></td>
+                  <td style="width: 500px;" >  <span class="firstname"> 🔵 <img  src="/flags/paysbas.png" alt="">&nbsp; Max</span>
+                      <span class="lastname1" ><b>Verstappen</b></span>
+                      <span class="ecurie1" >&nbsp; Red Bull Racing</span>
+                          
+                  </td>
+                  <td >  454 </td>
+                  
+              </tr>
+              <tr><td class="numeroT"><b>2</b></td>
+               <td >  <span class="firstname"> 🔴 <img  src="/flags/monaco.png" alt="">&nbsp; Charles -</span>
+                   <span class="lastname1" ><b>Leclerc</b></span>
+                   <span class="ecurie1" >&nbsp; Ferrari</span>
+                       
+               </td>
+               <td >  308 </td>
+               
+             </tr><tr class="blacko"><td class="numeroT"><b>3</b></td>
+               <td >  <span class="firstname"> 🔵 <img  src="/flags/mexique.jpg" alt="">&nbsp; Sergio</span>
+                   <span class="lastname1" ><b>Perez</b></span>
+                   <span class="ecurie1">&nbsp; Red Bull Racing</span>
+                       
+               </td>
+               <td >  305 </td>
+               
+             </tr><tr><td class="numeroT"><b>4</b></td>
+               <td >  <span class="firstname"> 🟢 <img  src="/flags/uk.png" alt="">&nbsp; George</span>
+                   <span class="lastname1" ><b>Russell</b></span>
+                   <span class="ecurie1">&nbsp; Mercedes</span>
+                    
+               </td>
+               <td >  275 </td>
+               
+             </tr>
+             <tr class="blacko"><td class="numeroT"><b>5</b></td>
+               <td >  <span class="firstname"> 🔴 <img  src="/flags/spain.png" alt="">&nbsp; Carlos</span>
+                   <span class="lastname1" ><b>Sainz</b></span>
+                   <span class="ecurie1" >&nbsp; Ferrari</span>
+                  </td>
+                   <td >  246 </td>
+               
+              </tr>
+              <tr><td class="numeroT"><b>6</b></td>
+                <td >  <span class="firstname"> 🟢 <img  src="/flags/uk.png" alt="">&nbsp; Lewis</span>
+                    <span class="lastname1" ><b>Hamilton</b></span>
+                    <span class="ecurie1" >&nbsp; Mercedes</span>
+                  </td>
+                    <td >  240 </td>
+                
+              </tr>
+              <tr class="blacko"><td class="numeroT"><b>7</b></td>
+                <td >  <span class="firstname"> 🟠 <img src="/flags/uk.png" alt="">&nbsp; Lando</span>
+                    <span class="lastname1" ><b>Norris</b></span>
+                    <span class="ecurie1" >&nbsp; McLaren-Mercedes</span>
+                  </td>
+                    <td >  122 </td>
+                
+              </tr>
+              <tr><td class="numeroT"><b>8</b></td>
+                <td >  <span class="firstname"> 🟣 <img  src="/flags/france.png" alt="">&nbsp; Esteban</span>
+                    <span class="lastname1" ><b>Ocon</b></span>
+                    <span class="ecurie1" >&nbsp; Alpine Renault</span>
+                  </td>
+                    <td >  92 </td>    
+                
+              </tr>
+              <tr class="blacko"><td class="numeroT"><b>9</b></td>
+                <td >  <span class="firstname"> 🟣 <img  src="/flags/spain.png" alt="">&nbsp; Fernando</span>
+                    <span class="lastname1" ><b>Alonso</b></span>
+                    <span class="ecurie1" >&nbsp; Alpine Renault</span>
+                  </td>
+                    <td >  81 </td>    
+                
+              </tr><tr><td class="numeroT"><b>10</b></td>
+                <td >  <span class="firstname"> 🟡 <img  src="/flags/finland.png" alt="">&nbsp; Valtteri</span>
+                    <span class="lastname1" ><b>Bottas</b></span>
+                    <span class="ecurie1" >&nbsp; Alfa Romeo Ferrari</span>
+                  </td>
+                    <td >  49 </td>   
+                
+              </tr><tr class="blacko"><td class="numeroT"><b>11</b></td>
+                <td >  <span class="firstname"> 🟠 <img  src="/flags/aus.png" alt="">&nbsp; Daniel</span>
+                    <span class="lastname1" ><b>Riccardo</b></span>
+                    <span class="ecurie1" >&nbsp; McLaren-Mercedes</span>
+                  </td>
+                    <td >  37 </td>  
+                
+              </tr><tr><td class="numeroT"><b>12</b></td>
+                <td >  <span class="firstname"> 🟤 <img  src="/flags/allemagne.jpg" alt="">&nbsp; Sebastien</span>
+                    <span class="lastname1" ><b>Vettel</b></span>
+                    <span class="ecurie1" >&nbsp; Aston Martin Aramco Mercedes</span>
+                  </td>
+                    <td >  37 </td>
+                
+              </tr><tr class="blacko"><td class="numeroT"><b>13</b></td>
+                <td >  <span class="firstname"> 🔴 <img  src="/flags/danmark.png" alt="">&nbsp; Kevin</span>
+                    <span class="lastname1" ><b>Magnussen</b></span>
+                    <span class="ecurie1" >&nbsp; Haas Ferrari</span>
+                  </td>
+                    <td >  25 </td>  
+                
+              </tr><tr><td class="numeroT"><b>14</b></td>
+                <td >  <span class="firstname"> ⚫ <img  src="/flags/france.png" alt="">&nbsp; Pierre</span>
+                    <span class="lastname1" ><b>Gasly</b></span>
+                    <span class="ecurie1" >&nbsp; AlphaTauri RBPT</span>
+                </td><td >  23 </td>  
+                
+              </tr><tr class="blacko"><td class="numeroT"><b>15</b></td>
+                <td >  <span class="firstname"> 🟤 <img  src="/flags/canada.jpg" alt="">&nbsp; Lance</span>
+                    <span class="lastname1" ><b>Stroll</b></span>
+                    <span class="ecurie1" >&nbsp; Aston Martin Aramco Mercedes</span>
+                  </td><td >  18 </td>  
+                
+              </tr><tr><td class="numeroT"><b>16</b></td>
+                <td >  <span class="firstname"> 🔴 <img  src="/flags/allemagne.jpg" alt="">&nbsp; Mick</span>
+                    <span class="lastname1" ><b>Schumacher</b></span>
+                    <span class="ecurie1" >&nbsp; Haas Ferrari</span>
+                  </td><td >  12 </td>  
+                
+              </tr><tr class="blacko"><td class="numeroT"><b>17</b></td>
+                <td >  <span class="firstname"> ⚫ <img  src="/flags/japon.jpg" alt="">&nbsp; Yuki</span>
+                    <span class="lastname1" ><b>Tsunoda</b></span>
+                    <span class="ecurie1" >&nbsp; AlphaTauri RBPT</span>
+                  </td><td >  12 </td>  
+                
+              </tr><tr><td class="numeroT"><b>18</b></td>
+                <td >  <span class="firstname"> 🟡 <img  src="/flags/chine.png" alt="">&nbsp; Guanyu</span>
+                    <span class="lastname1" ><b>Zhou</b></span>
+                    <span class="ecurie1" >&nbsp; Alfa Romeo Ferrari</span>
+                  </td><td >  6 </td>  
+                
+              </tr><tr class="blacko"><td class="numeroT"><b>19</b></td>
+                <td >  <span class="firstname"> ⚪ <img  src="/flags/uk.png" alt="">&nbsp; Alexander</span>
+                    <span class="lastname1" ><b>Albon</b></span>
+                    <span class="ecurie1" >&nbsp; Williams Mercedes</span>
+                  </td><td >  4 </td>  
+                
+              </tr><tr><td class="numeroT"><b>20</b></td>
+                <td >  <span class="firstname"> ⚪ <img  src="/flags/canada.jpg" alt="">&nbsp; Nicholas</span>
+                    <span class="lastname1" ><b>Latifi</b></span>
+                    <span class="ecurie1" >&nbsp; Williams Mercedes</span>
+                  </td><td >  2 </td>  
+                
+              </tr><tr class="blacko"><td class="numeroT"><b>21</b></td>
+                <td >  <span class="firstname"> ⚪ <img  src="/flags/paysbas.png" alt="">&nbsp; Nyck</span>
+                    <span class="lastname1" ><b>De Vries</b></span>
+                    <span class="ecurie1" >&nbsp; Williams Mercedes</span>
+                  </td><td >  2 </td>  
+                
+              </tr><tr><td class="numeroT"><b>22</b></td>
+                <td >  <span class="firstname"> 🟤 <img  src="/flags/allemagne.jpg" alt="">&nbsp; Nico</span>
+                    <span class="lastname1" ><b>Hulkenberg</b></span>
+                    <span class="ecurie1" >&nbsp; Aston Martin Aramco Mercedes</span>
+                  </td><td >  0 </td>  
+                
+              </tr>
+               
+               
+              </tbody>
+              
+              </table> </div> 
+
+                <!-- partie 3 eme tableau : classement 2022 des Ecuries-->
+              <div class="container3"> 
+                <table class="pilotes" > 
+                  <thead>
+                    <tr>
+                      <td colspan="5" class="classy1"><h6 style="text-align: center;">Classement 2022 des Ecuries</h6></td></tr>
+                        
+                  </thead>  
+                  <tbody>
+                
+                    <tr>
+                      <th>Rang</th>
+                      <th>constructeur</th>
+                      <th>Points</th>
+                      <th>Victoires</th>
+                      <th>Podiums</th>
+                    </tr>
+                
+                <tr class="blacko"><td class="numeroT"><b>1</b></td>
+                      <td>  <span class="lastname1"><b>🔵 Red Bull Racing</b></span>
+                    </td>
+                    <td >  759 </td>
+                    <td >  17 </td>
+                    <td >  28 </td>
+                    
+                </tr><tr><td class="numeroT"><b>2</b></td>
+                  <td>  <span class="lastname1"><b>🔴 Ferrari</b></span>
+                </td>
+                <td >  554 </td>
+                <td >  4 </td>
+                <td >  20 </td>
+                
+            </tr>
+            <tr class="blacko"><td class="numeroT"><b>3</b></td>
+              <td>  <span class="lastname1"><b>🟢 Mercedes</b></span>
+            </td>
+            <td >  515 </td>
+            <td >  1 </td>
+            <td >  17 </td>
+            
+             </tr>
+            <tr><td class="numeroT"><b>4</b></td>
+          <td>  <span class="lastname1"><b>🟣 Alpine</b></span>
+          </td>
+             <td >  173 </td>
+              <td >  0 </td>
+              <td >  0 </td>
+        
+              </tr>
+            <tr class="blacko"><td class="numeroT"><b>5</b></td>
+            <td>  <span class="lastname1"><b>🟠 McLaren</b></span>
+           </td>
+          <td >  159 </td>
+          <td >  0 </td>
+          <td >  1 </td>
+
+              </tr>
+              <tr ><td class="numeroT"><b>6</b></td>
+                <td>  <span class="lastname1"><b>🟡 Alfa Romeo</b></span>
+               </td>
+              <td >  55 </td>
+              <td >  0 </td>
+              <td >  0 </td>
+    
+                  </tr>
+                  <tr class="blacko"><td class="numeroT"><b>7</b></td>
+            <td>  <span class="lastname1"><b>🟤 Aston Martin</b></span>
+           </td>
+          <td >  55 </td>
+          <td >  0 </td>
+          <td >  0 </td>
+
+              
+            </tr>
+            <tr ><td class="numeroT"><b>8</b></td>
+      <td>  <span class="lastname1"><b>🔴 Haas</b></span>
+     </td>
+    <td >  37 </td>
+    <td >  0 </td>
+    <td >  0 </td>
+
+        
+           </tr>
+                  <tr class="blacko"><td class= "numeroT"><b>9</b></td>
+            <td>  <span class="lastname1"><b>⚫ AlphaTauri</b></span>
+           </td>
+          <td >  35 </td>
+          <td >  0 </td>
+          <td >  0 </td>
+
+              
+               </tr>
+                  <tr><td class="numeroT"><b>10</b></td>
+            <td>  <span class="lastname1"><b>⚪ Williams</b></span>
+           </td>
+          <td >  8 </td>
+          <td >  0 </td>
+          <td >  0 </td>
+
+              </tr>
+                 
+               
+                
+                
+                </tbody>
+                
+                </table> </div>
+             
+
+  <!-- partie baniere du quiz -->           
+<div class="quizinfo"  >
+       <a href="/pages/Quiz.html" ><h5 id="quiz">UP FOR A CHALLENGE ?  TESTEZ VOS CONNAISSANCES AVEC NOTRE QUIZ !</h5></a>
+</div>
+
+  <!-- balise script pour appeler le script tempsreel.js-->
+<script src="../js/tempsreel.js"></script>
+
+</main>
+
+  <!-- partie footer -->
+    <footer>
+        
+          <div class="content-footer">
+            <!-- partie 1 footer : stay in touch -->
+            <div class="bloc footer-contact">
+              <h3>Stay in touch</h3>
+              <p>00-11-22-33-44</p>
+              <a href="mailto:amir.doudou07@gmail.com">supportclient@contact.com</a>
+              <p>Usthb, Bab Ezzouar, Alger</p>
+            </div>
+            <!-- partie 2 footer : le schedule -->
+            <div class="bloc footer-schedule">
+              <h3>TimeSheet</h3>
+              <ul class="schedule-list">
+                <li>☑️ Dim  09-18</li>
+                <li>☑️ Lun  09-18</li>
+                <li>☑️ Mar  09-18</li>
+                <li>☑️ Mer  09-18</li>
+                <li>☑️ Jeu  09-18</li>
+                <li>❎ Ven fermé</li>
+                <li>☑️ Sam 09-18</li>
+              </ul>
+            </div>
+            <!-- partie 3 footer : contact -->
+            <div class="bloc footer-medias">
+              <h3>Our Networks</h3>
+              <ul class="media-list">
+                <li>
+                  <a >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="facebook"
+                      class="svg-inline--fa fa-facebook fa-w-16"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    > <!-- cette balise est utilise juste pour avoir l'icone de facebook,instagram etc -->
+                      <path
+                        fill="currentColor"
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                      ></path>
+                    </svg>
+                    Facebook/F1off</a
+                  >
+                </li>
+                <li>
+                  <a >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="instagram"
+                      class="svg-inline--fa fa-instagram fa-w-14"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path>
+                    </svg>
+                    Instagram/@F1off</a
+                  >
+                </li>
+                <li>
+                  <a >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="twitter"
+                      class="svg-inline--fa fa-twitter fa-w-16"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      ></path>
+                    </svg>
+                    Twitter/@F1off</a
+                  >
+                </li>
+                <li>
+                  <a >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="github"
+                      class="svg-inline--fa fa-github fa-w-16"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 496 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      ></path>
+                    </svg>
+                    Github/F1GIT</a
+                  >
+                </li>
+                <li>
+                  <a >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="youtube"
+                      class="svg-inline--fa fa-youtube fa-w-18"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                      ></path>
+                    </svg>
+                    Youtube/F1official</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+
+
+      
+
+
+</body>
+
+
+
+</html>
+
+<!--fin-->

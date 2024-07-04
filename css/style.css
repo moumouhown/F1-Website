@@ -1,0 +1,610 @@
+/*on applique la font et on enleve le style de liste a toutes la page  */
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: "F1font", sans-serif; 
+}
+
+body {
+  background-image: linear-gradient(to right, #270b0af3, #15151e);
+}
+
+@font-face {
+  font-family: "F1font"; /* on utilise un font de f1 pour ce site web*/
+  src: url(../fonts/Formula1-Regular_web_0.ttf);
+}
+/* on regle les parametres de la phrase de bienvenue */
+.welcom div {
+  color: rgb(218, 42, 15);
+  box-shadow: 10px 10px 50px rgb(230, 173, 173);
+  position: absolute;
+}
+.welcom p {
+  color: rgb(218, 42, 15);
+}
+table .blacko {   /*on a permute entre deux couleurs entre chaque tr du tableau, ceux qui ont l'id auront cette couleur, sinon la couleur du background*/
+  background-color: rgba(105, 105, 105, 0.226);
+}
+
+
+
+table tr .classy1 {  /* les titres des tableaux, exp: Classement des pilotes 2022*/
+  border: 1px outset rgba(105, 105, 105, 0.226);
+  color: white;
+  padding-bottom: -50px;
+  text-align: center;
+}
+
+/* container et la classe du classement des pilotes en direct  */
+.container{ 
+  background-color:#15151e;
+  width: 40%;
+  border-radius: 25px;
+  margin: 10px;
+  margin-top: -50px;
+  border: 15px outset #B22222;
+  height: 480px;
+}
+.container tbody {
+  display: block;
+  height: 315px;
+  overflow: auto;       /* ajouter une scroll-bar verticale*/
+  overflow-x: hidden;  /* cacher la scroll-bar sur l'axis X*/
+}
+tbody{border-radius: 10px;}
+
+.container thead {
+  display:table;
+  width: 100%;
+}
+
+/* container et la classe du classement des pilotes en 2022  */
+.container2 {
+  display: inline;
+  float: left;        /* positionner a gauche*/
+  background-color: #15151e;
+  width: 40%;
+  border-radius: 25px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  height: 695px;
+  overflow: auto;     /*scroll bar verticale*/
+  overflow-x:hidden;
+  border: none;
+}
+
+/* scroll-bar modifie */
+::-webkit-scrollbar {
+  width: 12px;     /* largeur scrollbar */
+}
+
+::-webkit-scrollbar-track { /* couleur du reste de la barre */
+  background:#15151eb6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #181313;    /* couleur de base de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9e0000be;  /* modifie la couleur on mouse hover*/
+}
+
+
+/* container et la classe du classement des Ecuries en 2022  */
+.container3 {
+  background-color: #15151e;
+
+  border-radius: 25px;
+  margin-right: 175px;
+  border: none;
+}
+
+/* modifier h6 */
+h6 {
+  display: block;
+  font-size: 2em;
+  margin: 0.67em 0 0.67em 0;
+  font-weight: bold;
+}
+
+/* modifier td, nb: ce td est valable pour tout les containers*/
+td {
+  font-size: small;
+  border: solid rgb(44, 44, 44);
+  color: #fff;
+  padding: 16px;
+}
+/* modifier th pour tt */
+th {
+  text-align: left;
+  color: dimgray;
+}
+table,
+table th,
+table td {
+  border-collapse: collapse;
+}
+
+/* modifier h1 */
+h1 {
+  margin-top: 100px; /*marge = la distance par rapport a l'element qui se trouve au dessus est de 100px*/
+  color: rgb(255, 255, 255);
+  font-size: 3.125rem;
+}
+/* modifier h2 */
+h2 {
+  text-align: left;
+  margin-left: 360px;
+  font-size: 2.125rem;
+  color: #e10600;
+}
+/* les parametres de la nav bar  */
+.nav_bar {
+  border: 3px solid red; /*bordure de type solid de couleur rouge */
+  background-color: black; /* couleur de fond noir*/
+  border-radius: 25px; /*les coins de la nav bar son arrondie de 25%*/
+  padding: 0 px;
+  display: flex;
+  justify-content: space-between; /*aligner les elements de la navbar*/
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center; /* centrer les elements de la nav */
+  overflow: hidden;
+  position: relative;
+}
+.nav_bar a {   
+  color: aliceblue; /* couleur des lien de la nav bar, exp: home, histoire */
+}
+.nav_bar a:hover {
+  color: #d70c0c; /* change de couleur sur hover*/
+}
+.container img {
+  width: 4%;      /* resize les images dans le container 1*/
+}
+
+.container2 img {
+  width: 4%;    /* resize les images dans le container 2*/
+}
+.container3 {
+  float: right;   /* positionner a gauche*/
+}
+.container3 img {
+  width: 4%;
+}
+
+.nav_bar img { /* resize le logo dans nav bar*/
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.nav_bar .nav-links ul {
+  display: flex;    /* type d'affichage de la liste nav bar*/
+}
+
+.nav_bar .nav-links ul li {
+  margin: 0 50px;
+}
+
+table tr td a{
+  color: aliceblue;
+  
+}
+
+#blink {  /* animation du blink pour le point rouge en direct */
+  width: 20px;    
+  height: 20px;
+  background-color: red; /* forme et positionnement de l'animation*/
+  border-radius: 100px;
+  margin-top: 8px;
+  float: right;
+  animation-name: blink;  /* nom de l'animation*/
+  animation-duration: 0.5s; /* duree de l'animation*/
+  animation-iteration-count: infinite; /* nombre d'iterations de l'animation*/
+}
+
+#blink1 {     /* autre utilisation du blink dans le temps des tours, on utilise le meme webkit mais cette fois avec un intervale different*/
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {  /* animation du blink: permuter entre 100% opacite et 0% */    
+  50% {
+    opacity: 0;
+  }
+}
+
+.slider-frame {         /* container qui contient le diaporama */
+  float: left;          /*positionner a gauche*/
+  overflow: hidden;     /*cacher les parties qui debordent*/
+  height: 450px;        /*hauter du container*/
+  width: 798px;         /*largeur*/
+  margin-left: 50px;    /*marge a gauche*/
+  margin-top: 10px;     /*marge en haut*/
+  border-radius: 1%;     /* degre coins du container*/
+  border: double;       /*type de bordure*/
+  border-color: #502f2e; /*couleur de la bordure*/
+}
+@-webkit-keyframes slide_animation {
+  0% {              /* position de l'image a l'instant 0% de l'animation*/
+    left: 400px;
+  }
+  10% {             /* position de l'image a l'instant 10% de l'animation*/
+    left: 400px;
+  }
+  20% {             /* position de l'image a l'instant 20% de l'animation*/
+    left: 1200px;
+  }
+  30% {             /* position de l'image a l'instant 30% de l'animation*/
+    left: 1200px;
+  }
+  40% {             /* position de l'image a l'instant 40% de l'animation*/
+    left: 2000px;
+  }
+  50% {             /* position de l'image a l'instant 50% de l'animation*/
+    left: 2000px;
+  }
+  60% {             /* position de l'image a l'instant 60% de l'animation*/
+    left: 1200px;
+  }
+  70% {             /* position de l'image a l'instant 70% de l'animation*/
+    left: 1200px;
+  }
+  80% {             /* position de l'image a l'instant 80% de l'animation*/
+    left: 400px;
+  }
+  90% {             /* position de l'image a l'instant 90% de l'animation*/
+    left: 400px;
+  }
+  100% {             /* position de l'image a l'instant 100% de l'animation*/
+    left: 400px;
+  }
+}
+
+.slide-images { /*div du diapo*/
+  width: 2400px;
+  height: 480px;
+  margin: 0 0 0 -2000px;
+  position: relative;
+  -webkit-animation-name: slide_animation; /*le nom de l'animaion*/
+  -webkit-animation-duration: 30s; /* la dureé est de 30s*/
+  -webkit-animation-iteration-count: infinite; /*animation ne s'arrete pas */
+  -webkit-animation-direction: alternate; /* la direction ce fait de gauche a droite puis de droit a gauche*/
+  -webkit-animation-play-state: running; /*la animaton est en marche*/
+}
+
+.img-container {
+  margin: 0px auto;
+  height: 60px;
+  width: 800px;
+  position: relative;
+  float: left;
+}
+
+html {
+  scroll-behavior: smooth;  /* lors du click d'un bouton qui renvoie en bas de page par exple, la page descend doucement */
+}
+
+.info button {
+  color: #f9e5e3;
+  padding: 30px 50px;
+  font-size: larger;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  position: relative;
+  margin: 80px;
+  transition: all 0.25s;
+  
+}
+.info {
+  float: left;
+  margin-left: 50px;
+}
+table tr td span {  
+  font-size: x-small;
+}
+table tr td .lastname1 {
+  font-size: medium;
+}
+table tr td .ecurie1 {
+  color: rgb(208, 245, 74); /* couleur des ecuries */
+}
+table tr .numeroT {
+  font-size: larger;    /* les numeros "rang" */
+  color: rgb(21, 172, 172);
+}
+table tr .ecurie .info button {
+  color: rgb(244, 183, 178);
+}
+
+.info button::after,/* les parametres des boutons avant et apres le hover*/
+button::before {
+  border: 3px solid rgba(224, 72, 45, 0.879);
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  bottom: 0px;
+  transition: all 0.25s;
+}
+.info button:hover::after {
+  /* les parametres des boutons apres le hover*/
+  transform: translate(-5px, -5px);
+}
+
+.info button:hover::before {
+  /* les parametres des boutons avant  le hover*/
+  transform: translate(5px, 5px);
+}
+
+.classementtitle {
+  color: rgb(218, 42, 15);
+  padding-bottom: -50px;
+}
+.classement img {
+  width: 450px;
+  height: 500px;
+  border-radius: 2%;
+}
+
+.classement_pilote img {
+  margin-left: 300px;
+}
+
+.classement_pilote h2 {
+  color: #fff;
+  margin-left: 500px;
+  margin-top: 50px;
+}
+
+/* partie quiz */
+.quizinfo {
+  background-image: url("/flags/quizinfo.jpg"); /* image arriere plan*/
+  background-repeat: no-repeat;
+  background-position: center;
+  clear: both;      /* clear les flex deja utilises en haut*/
+  border: 2px solid #333;
+
+  width: 80%;
+  text-align: center;
+
+  height: 17%;
+  border-radius: 35px;
+
+  margin: auto;
+  margin-bottom: 20px;
+}
+.quizinfo h5 {  /* modifier h5 dans le box*/
+  font-family: "F1font", sans-serif;
+  color: wheat;
+  font-size: x-large;
+}
+
+
+/* footer */
+#footer {
+  position: relative;
+  height: 100px;
+  clear: both;
+}
+
+.content {
+  /* grow shrink basis */
+  flex: 1 0 auto;
+}
+
+.content p {
+  padding: 2vw 10vw 5vw;
+  text-align: justify;
+}
+ /* partie footer*/
+footer { /* le container du footer */
+  flex-shrink: 0;
+  border-top: 1px dashed #000;
+  width: 100%;
+  background-color:rgba(224, 48, 17, 0.493);  
+  color: rgb(255, 255, 255);
+  clear: left;
+}
+
+.content-footer { /* le contenu du footer */
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  padding: 50px 100px;
+}
+
+.bloc {
+  flex-basis: 20%;
+  margin: 0 30px;
+}
+
+/* contact h3 */
+.footer-contact h3,
+.footer-schedule h3,
+.footer-medias h3 {
+  font-size: 22px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.footer-contact p {
+  padding: 5px 0;
+}
+
+/* Services */
+
+.schedule-list,
+.media-list {
+  list-style-type: none;
+}
+
+/* Medias */
+
+.media-list {
+  position: relative;
+  right: 10px;
+}
+
+.media-list svg {
+  width: 30px;
+  margin: 10px 10px;
+}
+
+.media-list a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 900px) {
+  /*reglage de la page lorsque la page a une taille inferieur a 900px*/
+  #actu {
+    margin-left: 270px;
+  }
+
+  .slider-frame {
+    height: 380px;
+    width: 730px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    border: none;
+    height: 250px;
+    width: 450px;
+    margin-top: 50px;
+    margin-right: 120px;
+    align-items: center;
+  }
+  .container table {
+    height: 500px;
+    width: 450px;
+
+    margin-right: 120px;
+  }
+
+  .info {
+    margin-top: 300px;
+    text-align: center;
+  }
+  .info button {
+    width: 30%;
+    height: 10%;
+    padding: 5px;
+  }
+  .container2 {
+    height: 700px;
+    width: 450px;
+    margin-left: 170px;
+    align-items: center;
+  }
+  .container3 {
+    align-items: center;
+    width: 450px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+
+  .content-footer {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .bloc {
+    flex-basis: auto;
+    margin: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*reglage de la page lorsque la page a une taille inferieur a 600px*/
+  #actu {
+    margin-left: 120px;
+  }
+
+  .slider-frame {
+    height: 200px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    border: none;
+    height: 250px;
+    width: 450px;
+    margin-top: 50px;
+    margin-right: 120px;
+    align-items: center;
+  }
+  .info {
+    margin-top: 300px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1500px) {
+  /*reglage de la page lorsque la page a une taille entre 901px et 1500px*/
+  #actu {
+    margin-left: 400px;
+  }
+
+  .slider-frame {
+    height: 450px;
+    width: 800px;
+    margin-left: 150px;
+  }
+
+  .container {
+    border: none;
+    height: 250px;
+    width: 450px;
+    margin-top: 50px;
+    margin-right: 300px;
+    align-items: center;
+  }
+  
+  .info {
+    margin-top: 300px;
+    text-align: center;
+  }
+  .info button {
+    width: 30%;
+    height: 10%;
+    padding: 5px;
+  }
+  .container2 {
+    height: 700px;
+    width: 450px;
+    margin-left: 350px;
+    align-items: center;
+  }
+  .container3 {
+    align-items: center;
+    width: 450px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+
+  .content-footer {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .bloc {
+    flex-basis: auto;
+    margin: 20px 20px;
+  }
+}

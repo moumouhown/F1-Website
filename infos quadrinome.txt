@@ -1,0 +1,20 @@
+Nom: Belharrat
+Prenom: Yanis Zidane
+Matricule: 191931085131
+Section: M1 IL
+
+Nom: Doudou
+Prenom: Amir
+Matricule: 191931081313
+Section: M1 IL
+
+Nom: Aggad
+Prenom: Mohamed Wassim
+Matricule: 191931050516
+Section: M1 IL
+
+Nom: Aouane
+Prenom: Mohand Ou Idir
+Matricule: 191931052440
+Section: M1 IL
+

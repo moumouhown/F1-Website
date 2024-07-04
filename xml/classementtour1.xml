@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog>
+
+<catalog>
+
+<competiteur>
+<rang>1</rang>
+
+<prenom>🔵 Max</prenom>
+<nom>Verstappen</nom>
+<ecurie>Red Bull Racing</ecurie>
+<temps>1min:30s</temps>
+<tour>01/04</tour>
+</competiteur>
+
+<competiteur>
+<rang>2</rang>
+<prenom>🔴 Charles -</prenom>
+<nom>Leclerc</nom>
+<ecurie>Ferrari</ecurie>
+<temps>1min:32s</temps>
+<tour>01/04</tour>
+</competiteur>
+<competiteur>
+<rang>3</rang>
+
+<prenom>🔵 Sergio</prenom>
+<nom>Perez</nom>
+<ecurie>Red Bull Racing</ecurie>
+<temps>1min:33s</temps>
+<tour>01/04</tour>
+</competiteur>
+
+<competiteur>
+<rang>4</rang>
+
+<prenom>🟢 George</prenom>
+<nom>Russell</nom>
+<ecurie>Mercedes</ecurie>
+<temps>1min:34s</temps>
+<tour>01/04</tour>
+</competiteur>
+<competiteur>
+<rang>5</rang>
+
+<prenom>🔴 Carlos</prenom>
+<nom>Sainz</nom>
+<ecurie>Ferrari</ecurie>
+<temps>1min:34s</temps>
+<tour>01/04</tour>
+</competiteur>
+
+<competiteur>
+<rang>6</rang>
+
+<prenom>🟢 Lewis</prenom>
+<nom>Hamilton</nom>
+<ecurie>Mercedes</ecurie>
+<temps>1min:35s</temps>
+<tour>01/04</tour>
+</competiteur><competiteur>
+<rang>7</rang>
+
+<prenom>🟠 Lando</prenom>
+<nom>Norris</nom>
+<ecurie>McLaren-Mercedes</ecurie>
+<temps>1min:37s</temps>
+<tour>01/04</tour>
+</competiteur><competiteur>
+<rang>8</rang>
+
+<prenom>🟣 Esteban</prenom>
+<nom>Ocon</nom>
+<ecurie>Alpine Renault</ecurie>
+<temps>1min:38s</temps>
+<tour>01/04</tour>
+</competiteur><competiteur>
+<rang>9</rang>
+
+<prenom>🟣 Fernando</prenom>
+<nom>Alonso</nom>
+<ecurie>Alpine Renault</ecurie>
+<temps>1min:39s</temps>
+<tour>01/04</tour>
+</competiteur><competiteur>
+<rang>10</rang>
+
+<prenom>🟡 Valtteri</prenom>
+<nom>Bottas</nom>
+<ecurie>Alfa Romeo Ferrari</ecurie>
+<temps>1min:40s</temps>
+<tour>01/04</tour>
+</competiteur><competiteur>
+<rang>11</rang>
+
+<prenom>🟠 Daniel</prenom>
+<nom>Riccardo</nom>
+<ecurie>McLaren-Mercedes</ecurie>
+<temps>1min:40s</temps>
+<tour>01/04</tour>
+</competiteur><competiteur>
+<rang>12</rang>
+
+<prenom>🟤 Sebastien</prenom>
+<nom>Vettel</nom>
+<ecurie>Aston Martin Aramco Mercedes</ecurie>
+<temps>1min:41s</temps>
+<tour>01/04</tour>
+</competiteur>
+</catalog>

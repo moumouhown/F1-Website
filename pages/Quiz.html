@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULA 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style_quiz.css">
+    <link rel="shortcut icon" href="../res/F1logo.jpg" type="image/x-icon" style="border-radius: 50%;">
+</head>
+<body>
+    <!-- button start qui permet d'acceder au quiz -->
+    <div class="start_btn">
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <button>Start !</button>
+    </div>
+     <!-- un box qui contient les regles de quiz -->
+     <div class="info_box">
+        <div class="info-title"><span>Règles de Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Vous aurez seulement <span>15 secondes</span> pour chaque question.</div>
+            <div class="info">2. Une fois que vous avez sélectionné votre réponse, elle ne peut pas être modifier.</div>
+            <div class="info">3. Vous ne pouvez sélectionner aucune option une fois que le temps s'est écoulé.</div>
+            <div class="info">4. Vous ne pouvez pas quitter le Quiz pendant que vous jouez.</div>
+            <div class="info">5. Vous obtiendrez des points sur la base de vos bonnes réponses.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">GO</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Formula 1 QUIZ</div>
+            <div class="timer">
+                <div class="time_left_txt">Temps restant</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- la on a des questions qui vont etre insérer depuis le script.js-->
+            </div>
+            <div class="option_list">
+                <!-- la on a des option qui vont etre affichées a partir de script.js-->
+            </div>
+        </section>
+
+        <!-- footer de le Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- ici on a le nomnbre de question qui va etre insérer depuis script.js -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">QUIZ terminé</div>
+        <div class="score_text">
+            <!-- ici on aura le nombre de réponses juste a partir de script.js -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script src="../js/question.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>
